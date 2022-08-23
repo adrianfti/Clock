@@ -1,0 +1,163 @@
+body {
+  background-color: #333;
+  font-family: "Rubik Moonrocks", cursive;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* text - hire ------ */
+
+p {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: orange;
+  font-size: 4rem;
+}
+
+/* footer ---------------- */
+footer {
+  height: 130px;
+  border-radius: 10px;
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+footer > div {
+  flex: 33%;
+  text-align: center;
+  color: white;
+  padding-top: 5px;
+}
+footer > div:hover {
+  background-color: rgb(75, 75, 75);
+  transition: ease 0.9s;
+}
+footer > div:active {
+  background-color: black;
+}
+.currentTime {
+  border-radius: 10px 0 0 10px;
+}
+.timer {
+  border-radius: 0 10px 10px 0;
+}
+.hidden {
+  display: none;
+}
+/* clock container--------- */
+
+.container {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 10px;
+  font-size: 7rem;
+  width: 10ch;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgb(230, 230, 230);
+}
+.clockContainer > span {
+  padding-left: 8px;
+}
+/* stopwatch container */
+
+.stopwatchContainer {
+  top: 35%;
+  border: none;
+  width: 11ch;
+}
+.time {
+  border-radius: 10px;
+  padding: 10px;
+  width: 11ch;
+  padding-left: 10px;
+  display: flex;
+}
+.buttons {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  margin: auto;
+}
+.buttons > button {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  border-radius: 10px;
+  height: 3.5rem;
+  width: 10.5rem;
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-family: "Rubik Moonrocks", cursive;
+}
+
+.buttons > button:hover {
+  color: white;
+  border: 2px solid orange;
+}
+.buttons #start:hover {
+  background-color: green;
+  border: none;
+}
+.buttons #pause:hover {
+  background-color: orange;
+  border: none;
+}
+.buttons #stop:hover {
+  background-color: red;
+  border: none;
+}
+
+/* timer container ------ */
+
+.countDown {
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.timerContainer {
+  border: none;
+  width: 12ch;
+}
+.buttons #startCountDown:hover {
+  background-color: green;
+  border: none;
+}
+.buttons #cancelCountDown:hover {
+  background-color: red;
+  border: none;
+}
+.pickTime {
+  width: 70%;
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  padding: 20px;
+  position: relative;
+  top: 5rem;
+}
+.pickTime > input {
+  width: 7rem;
+  height: 1.5rem;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
